@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // String Methods 
+        let str = "       This is JavaScript    "
+        console.log("to upper case : = ", str.toUpperCase());
+        console.log("to LOwer case : = ", str.toLowerCase());
+        // trim : to remove spaces 
+        console.log("trimStart() : = ", "     str".trimStart());
+        console.log("trimEnd() : = ", "str   ".trimEnd());
+
+        // String in JavaScript
+
+        // String Creation
+        let str1 = "Hello";
+        let str2 = 'World';
+        let str3 = `Hello World`; // template literal
+        console.log("Creation:", str1, str2, str3);
+
+        // String Length
+        console.log("Length:", str3.length); // 11
+
+        // Accessing Characters
+        console.log("Accessing:", str1[0], str1.charAt(1)); // H e
+
+        // Case Conversion
+        let text = "JavaScript";
+        console.log("Uppercase:", text.toUpperCase());
+        console.log("Lowercase:", text.toLowerCase());
+
+        // Searching
+        let str4 = "Hello JavaScript";
+        console.log("indexOf:", str4.indexOf("Java"));
+        console.log("lastIndexOf:", str4.lastIndexOf("a"));
+        console.log("includes:", str4.includes("Script"));
+        console.log("startsWith:", str4.startsWith("Hello"));
+        console.log("endsWith:", str4.endsWith("JavaScript"));
+
+        // Extracting Parts
+        let str5 = "Hello World";
+        console.log("slice:", str5.slice(0, 5));
+        console.log("substring:", str5.substring(6));
+        console.log("substr (deprecated):", str5.substr(6, 3));
+
+        // Replacing
+        let str6 = "I like JavaScript";
+        console.log("replace:", str6.replace("JavaScript", "JS"));
+        console.log("replaceAll:", str6.replaceAll("a", "A"));
+
+        // Trimming
+        let str7 = "   Hello   ";
+        console.log("trim:", str7.trim());
+        console.log("trimStart:", str7.trimStart());
+        console.log("trimEnd:", str7.trimEnd());
+
+        // Splitting and Joining
+        let str8 = "a,b,c,d";
+        let arr = str8.split(",");
+        console.log("split:", arr);
+        console.log("join:", arr.join("-"));
+
+        // Template Literals
+        let name = "Aishwarya";
+        let course = "JavaScript";
+        let message = `Hello ${name}, welcome to ${course}!`;
+        console.log("Template Literal:", message);
+
+
+
+
+    </script>
+</body>
+
+</html>

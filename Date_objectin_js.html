@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // getDate : return day of month 
+        //getDay : returns day of week 
+        // getFullYear : rerurns 4 digit year 
+        // getMonth : returns 0 to 12 ( month )
+        // getHours : reurns hours ( 0 - 23 ) 
+        // getMinutes : returns mins ( 0 - 59 )
+        // getSeconds : rerurns secs ( 0 - 59 )
+        // getMilliSeconds() : returns ( 0 - 59 )
+        // getTime : returns time ( 0 - 12 )
+        // getTimeZoneOffset() : returns diff in mins in between UTC and local time zone 
+
+        // setDate(day) 
+        // setMonth(month)
+        // setFullYear(year)
+        // setHours(hours)
+        // setMinutes(minutes)
+        // setSeconds(seconds)
+        // setMiliseconds(milisecondes)
+        // setTime(miliseconds)
+
+        // Getting Date 
+        let cDate = new Date();
+        console.log("current date : = ", cDate);
+        console.log("Current Date : = ", cDate.getDate());
+        let d = new Date();
+        console.log("Year:", d.getFullYear());     // e.g. 2025
+        console.log("Month:", d.getMonth());       // 0-11 (0 = Jan)
+        console.log("Date:", d.getDate());         // 1-31
+        console.log("Day:", d.getDay());           // 0-6 (0 = Sunday)
+        console.log("Hours:", d.getHours());       // 0-23
+        console.log("Minutes:", d.getMinutes());   // 0-59
+        console.log("Seconds:", d.getSeconds());   // 0-59
+        console.log("Milliseconds:", d.getMilliseconds()); // 0-999
+        console.log("Timestamp:", d.getTime());    // ms since Jan 1, 1970
+
+        // Setting Date
+        d = new Date();
+        d.setFullYear(2030);
+        d.setMonth(5);   
+        d.setDate(15);
+        d.setHours(10);
+        d.setMinutes(45);
+        console.log("Updated Date:", d);
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

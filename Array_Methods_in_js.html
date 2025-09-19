@@ -12,7 +12,7 @@
 
         // 1. Adding and removing Element : push , pop , shift , unshift 
         // push and pop works on last element of array 
-        let arr = [10, 70 ,30 ,23, 40, 79 ]
+        let arr = [10, 70, 30, 23, 40, 79]
         console.log("Original Array : = " + arr);
         arr.push(100);
         console.log("After Addding element : = " + arr);
@@ -42,21 +42,73 @@
 
         // find() : only returns the first match 
         // console.log(arr.find((x) => x % 2 == 0 ));
-        
+
         // indexOf() 
         // console.log("The the inddex of 79 is : = ",arr.indexOf(79));
-        
+
         // include()
         // console.log("is 79 present in array : = ",arr.includes(79));
-        
+
         // lastINdexOf : // return last index only 
         // console.log("is 79 present in array : = ",arr.lastIndexOf(79)); 
-    
+
         // sort 
         // arr.sort()
         // console.log("the sorted array in s: = ",arr);
-        
-        
+
+        // includes : returns true if given element is present in the array 
+        // console.log(arr.includes(10));
+
+        // reverse the array  : reverse the array 
+        // console.log(arr.reverse());
+
+        // 4.creating and modifying the array : concat() , split() , splice() , substring() , trim() , slice() , fill() , copywithin()
+        // concat : to combine the array
+        // let arr1 = [1,2,3,4,5,6,7] , arr2 = [5,6,7]
+        // console.log("array after concat " ,arr1.concat(arr2));
+
+        // slice : to cut the array
+        // console.log(arr.slice(1,4)); // [70, 30, 23]
+
+        // splice : Adds, removes, or replaces elements in the original array.
+        // syntax : = splice(start, deleteCount, item1, item2, …) → removes and/or inserts elements starting from start.
+        // Example to Remove element using splice 
+        // arr = [10, 20, 30, 40, 50];
+        // let removed = arr.splice(1, 2); // start at index 1, remove 2 elements
+        // console.log(removed); // [20, 30]
+        // console.log(arr);     // [10, 40, 50] (modified)
+
+        // example to insert the element using splice method 
+        // arr = [10, 40, 50];
+        // arr.splice(1, 0, 20, 30); // at index 1, remove 0, add 20 & 30
+        // console.log(arr); // [10, 20, 30, 40, 50]
+
+        // example to replace the element using splice method 
+        // arr = [10, 20, 30, 40];
+        // arr.splice(1, 2, 99, 100); // at index 1, remove 2, insert 99 & 100
+        // console.log(arr); // [10, 99, 100, 40]
+
+        // fill : The fill() method changes all or part of an array to a static value.
+        // sytax : array.fill(value, start, end)
+        // Example 1: Fill entire array
+        // let arr1 = [1, 2, 3, 4, 5];
+        // arr1.fill(0);
+        // console.log("Example 1:", arr1); // [0, 0, 0, 0, 0]
+
+        // // Example 2: Fill from index
+        // let arr2 = [1, 2, 3, 4, 5];
+        // arr2.fill(9, 2);
+        // console.log("Example 2:", arr2); // [1, 2, 9, 9, 9]
+
+        // // Example 3: Fill in range
+        // let arr3 = [1, 2, 3, 4, 5];
+        // arr3.fill(7, 1, 4);
+        // console.log("Example 3:", arr3); // [1, 7, 7, 7, 5]
+
+        // // Example 4: Create new filled array
+        // let arr4 = new Array(5).fill(1);
+        // console.log("Example 4:", arr4); // [1, 1, 1, 1, 1]
+
 
 
     </script>
